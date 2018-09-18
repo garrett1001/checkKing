@@ -30,8 +30,6 @@ bool chessBoard::scanMoves(char piece, int row, int column)//scans the moves of 
     {
         if(piece == 'a') //white pawn
         {
-            std::cout<<"a: "<<piece<<std::endl;
-            
             char scan1 = board[row-1][column+1];//scans its moves
             char scan2 = board[row-1][column-1];
             
@@ -46,8 +44,6 @@ bool chessBoard::scanMoves(char piece, int row, int column)//scans the moves of 
         }
         else // black pawn
         {
-            std::cout<<"A: "<<piece<<std::endl;
-            
             char scan1 = board[row+1][column+1];
             char scan2 = board[row+1][column-1];
             
@@ -65,8 +61,6 @@ bool chessBoard::scanMoves(char piece, int row, int column)//scans the moves of 
     {
         if(piece == 'n') // white knight
         {
-            std::cout<<"n: "<<piece<<std::endl;
-            
             char scan1 = board[row-1][column-2];//scans its moves
             char scan2 = board[row-2][column-1];
             char scan3 = board[row+1][column+2];
@@ -87,8 +81,6 @@ bool chessBoard::scanMoves(char piece, int row, int column)//scans the moves of 
         }
         else // black knight
         {
-            std::cout<<"N: "<<piece<<std::endl;
-            
             char scan1 = board[row-1][column-2];//scans its moves
             char scan2 = board[row-2][column-1];
             char scan3 = board[row+1][column+2];
